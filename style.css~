@@ -1,0 +1,10 @@
+.but
+{
+background: linear-gradient(to top left, Navy,Fuchsia);
+color: pink;
+}
+.val{color:red}
+GtkCheckButton
+{
+background: linear-gradient(to top left, Navy,Fuchsia);
+}
