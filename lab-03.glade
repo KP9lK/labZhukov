@@ -2,6 +2,7 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
+  <!-- interface-css-provider-path style.css -->
   <object class="GtkWindow" id="wnd">
     <property name="can_focus">False</property>
     <child>
@@ -130,12 +131,12 @@
           </object>
           <packing>
             <property name="left_attach">0</property>
-            <property name="top_attach">3</property>
+            <property name="top_attach">4</property>
           </packing>
         </child>
         <child>
           <object class="GtkButton">
-            <property name="label" translatable="yes">sxy bitton</property>
+            <property name="label" translatable="yes">i am a beautiful</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
@@ -145,8 +146,101 @@
           </object>
           <packing>
             <property name="left_attach">0</property>
+            <property name="top_attach">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="chk_z">
+            <property name="label" translatable="yes">Z</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="image_position">bottom</property>
+            <property name="draw_indicator">True</property>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
             <property name="top_attach">2</property>
           </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="opt_e">
+            <property name="label" translatable="yes">E</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="draw_indicator">True</property>
+            <property name="group">opt_a</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="opt_f">
+            <property name="label" translatable="yes">F</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="draw_indicator">True</property>
+            <property name="group">opt_a</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="opt_h">
+            <property name="label" translatable="yes">H</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="draw_indicator">True</property>
+            <property name="group">opt_a</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkRadioButton" id="opt_g">
+            <property name="label" translatable="yes">G</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="draw_indicator">True</property>
+            <property name="group">opt_a</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="top_attach">6</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
         </child>
       </object>
     </child>

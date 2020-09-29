@@ -1,10 +1,13 @@
+
 .but
 {
-background: linear-gradient(to top left, Navy,Fuchsia);
+background: linear-gradient(to top left, Orange,Fuchsia);
+
 color: pink;
 }
-.val{color:red}
+.val{color:red;}
 .a
 {
-background: linear-gradient(to top left, Navy,Fuchsia);
+background: linear-gradient(to top left, Yellow,Fuchsia);
 }
+
