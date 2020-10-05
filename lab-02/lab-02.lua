@@ -93,7 +93,7 @@ a = tonumber(ui.text1.text)
 b = tonumber(ui.text2.text)
 ui.res.label = math.tan(a)
 end
-ui.calc.title = 'lab-02_Zhukov'
+ui.calc.title = 'lab-02_Tsvetkov'
 ui.calc.on_destroy = gtk.main_quit
 ui.calc:show_all()
 
