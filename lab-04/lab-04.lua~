@@ -17,7 +17,7 @@ ctx.add_provider_for_screen(scr,prov,gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
 
 function ui.add_btn:on_clicked(...)
 i=ui.md_it:append()
-ui.test.label =ui.combo[tonumber(1)]
+ui.test.label =ui.combo[tonumber(2)]
 ui.md_it[i]={[1]=ui.name.text, [2]=tonumber(ui.val.text),[3]=pixbuf.new_from_file('img-apple.png')}
 end
 rdr_txt=gtk.CellRendererText{}
