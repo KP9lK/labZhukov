@@ -4,7 +4,7 @@ gdk=lgi.Gdk
 pixbuf=lgi.GdkPixbuf.Pixbuf
 gtk.init()
 
-image_arr={"img-apple.png","img-orange.png","img-blueberry.png","img-cherry.png"}
+image_arr={"img-apple.png","orange.png","blueberry.png","cherry.png"}
 bld=gtk.Builder()
 bld:add_from_file('lab-04.glade')
 ui=bld.objects
