@@ -4,10 +4,10 @@ gdk=lgi.Gdk
 pixbuf=lgi.GdkPixbuf.Pixbuf
 gtk.init()
 
+image_arr={"img-apple.png","he"}
 bld=gtk.Builder()
 bld:add_from_file('lab-04.glade')
 ui=bld.objects
-
 prov=gtk.CssProvider()
 prov:load_from_path('style.css')
 
@@ -17,8 +17,7 @@ ctx.add_provider_for_screen(scr,prov,gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
 
 function ui.add_btn:on_clicked(...)
 i=ui.md_it:append()
-ui.test.label =ui.combo[tonumber(1)]
-ui.md_it[i]={[1]=ui.name.text, [2]=tonumber(ui.val.text),[3]=pixbuf.new_from_file('img-apple.png')}
+ui.md_it[i]={[1]=ui.name.text, [2]=tonumber(ui.val.text),[3]=pixbuf.new_from_file(image_arr[ui.pic.active+1])}
 end
 rdr_txt=gtk.CellRendererText{}
 rdr_pix=gtk.CellRendererPixbuf{}
