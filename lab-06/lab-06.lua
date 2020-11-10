@@ -1,0 +1,38 @@
+lgi=require 'lgi'
+sqlite= require 'lsqlite3'
+
+gtk=lgi.Gtk
+pixbuf=lgi.GdkPixbuf.Pixbuf
+
+gtk.init()
+
+
+bld=gtk.Builder()
+bld:add_from_file('lab-06.glade')
+ui=bld.objects
+
+rdr_txt=gtk.CellRendererText{}
+rdr_pix=gtk.CellRendererPixbuf{}
+
+c1=gtk.TreeViewColumn{title='Name', {rdr_txt,{text=1}}}
+c2=gtk.TreeViewColumn{title='Value', {rdr_txt,{text=2}}}
+c3=gtk.TreeViewColumn{title='Image', {rdr_pix,{pixbuf=3}}}
+
+ui.list:append_column(c1)
+ui.list:append_column(c2)
+ui.list:append_column(c3)
+
+db = sqlite.open('lab-06.db')
+
+for row in db:nrows('SELECT * FROM list') do
+px=pixbuf.new_from_file(row.image)
+el=ui.store:append()
+ui.store[el]={[1]=row.name,[2]=row.value,[3]=px}
+end
+
+db:close()
+
+ui.wnd.title='lab-06_Zhukov'
+ui.wnd.on_destroy=gtk.main_quit
+ui.wnd:show_all()
+gtk.main()
